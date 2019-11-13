@@ -3,14 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <title>Playground - JavaScript 101</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
+  <div class="container text-center">
+    <!-- FOR THE AVENGERS EVENT LISTENER -->
+    <button id="assembleAvengers">Avengers Assemble!</button>
+    <ul id="avengers"></ul>
 
-    <!-- Add some HTML in here -->
+    <!-- FOR THE OMDB MOVIE SEARCH -->
+    <form id="search-movies" class="form-inline">
+      <input id="keyword" type="text" class="form-control ml-auto mr-2" placeholder="Find movies">
+      <input type="submit" class="btn btn-primary mr-auto ml-2" value="Search">
+    </form>
 
+    <!--  FOR THE ALGOLIA PLACES SEARCH -->
+    <form id="search-algolia" class="form-inline">
+      <input id="algolia-input" type="text" class="form-control ml-auto mr-2" placeholder="Search Algolia places">
+      <input type="submit" class="btn btn-primary mr-auto ml-2" value="Search">
+    </form>
+    <ul id="movies" class="list-inline">
+  </div>
+  <!-- <img src="image.png" alt=""> -->
+    </ul>
     <script src="main.js"></script>
   </body>
 </html>
