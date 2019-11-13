@@ -4,8 +4,8 @@ First clone this repository to your laptop. You must have Node (> v4) and [yarn]
 
 ```bash
 cd ~/code/<your_github_nickname>
-git clone git@github.com:lewagon/webpack-boilerplate.git my-js-project
-cd my-js-project
+git clone git@github.com:The-Pavel/dom_rehearsal.git
+cd dom_rehearsal
 rm -rf .git
 yarn install
 stt # Open this folder in Sublime Text
