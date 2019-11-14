@@ -4,8 +4,8 @@ First clone this repository to your laptop. You must have Node (> v4) and [yarn]
 
 ```bash
 cd ~/code/<your_github_nickname>
-git clone git@github.com:The-Pavel/dom_rehearsal.git
-cd dom_rehearsal
+git clone git@github.com:The-Pavel/js_plugins.git
+cd js_plugins
 rm -rf .git
 yarn install
 stt # Open this folder in Sublime Text
@@ -21,5 +21,5 @@ webpack-dev-server
 Once a file has been updated in Sublime, you can run it with:
 
 ```bash
-node lib/01_types.js
+node src/index.js
 ```
