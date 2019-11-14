@@ -6,28 +6,34 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <!-- need to link the stylesheet of Select2 plugin to make our input styled -->
+      <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+      <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- Select2 plugin dropdown -->
+    <select class="select2" name="country" name="states[]" multiple="multiple">
+      <option value="AL">Alabama</option>
+      <option value="WY">Wyoming</option>
+      <option value="CA">California</option>
+      <option value="FL">Florida</option>
+      <option value="TX">Texas</option>
+    </select>
+    <!-- MarkdownIt plugin editor and preview window -->
   <div class="container text-center">
-    <!-- FOR THE AVENGERS EVENT LISTENER -->
-    <button id="assembleAvengers">Avengers Assemble!</button>
-    <ul id="avengers"></ul>
+    <textarea class="form-control" id="editor" rows="4"></textarea>
+    <div id="preview"></div>
 
-    <!-- FOR THE OMDB MOVIE SEARCH -->
+
+    <!-- Movie Search -->
     <form id="search-movies" class="form-inline">
       <input id="keyword" type="text" class="form-control ml-auto mr-2" placeholder="Find movies">
       <input type="submit" class="btn btn-primary mr-auto ml-2" value="Search">
     </form>
-
-    <!--  FOR THE ALGOLIA PLACES SEARCH -->
-    <form id="search-algolia" class="form-inline">
-      <input id="algolia-input" type="text" class="form-control ml-auto mr-2" placeholder="Search Algolia places">
-      <input type="submit" class="btn btn-primary mr-auto ml-2" value="Search">
-    </form>
+    <!-- SortableJs movie drag-and-drop list -->
     <ul id="movies" class="list-inline">
-  </div>
-  <!-- <img src="image.png" alt=""> -->
     </ul>
+  </div>
     <script src="main.js"></script>
   </body>
 </html>
