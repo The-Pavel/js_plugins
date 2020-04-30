@@ -15,7 +15,7 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "markdown-it": "^10.0.0",
     "select2": "^4.0.12",
     "sortablejs": "^1.10.1"
